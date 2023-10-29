@@ -13,20 +13,23 @@ const Contact = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {contacts.map((item) => (
-            <div
-              className={
-                "group items-center text-center mx-8 my-4 rounded-xl shadow-md px-4 py-4 max-w-[180px] hover:scale-105 transition-all " +
-                item.style
-              }
-              onClick={() => navigator.clipboard.writeText(item.label)}
+            <a
+              href={item.href}
+              className={"flex justify-between items-center w-full text-xs"}
+              target="_blank"
+              rel="noreferrer"
             >
-              {item.altChild}
-              <p className="truncate ..">{item.label}</p>
-              <FaClipboard
-                size={40}
-                className="absolute top-0 right-0 z-50 p-2"
-              />
-            </div>
+              <div
+                className={
+                  "group items-center text-center mx-8 my-4 rounded-xl shadow-md px-4 py-4 max-w-[180px] hover:scale-105 transition-all " +
+                  item.style
+                }
+                onClick={() => navigator.clipboard.writeText(item.label)}
+              >
+                {item.altChild}
+                <p className="truncate ..">{item.label}</p>
+              </div>
+            </a>
           ))}
         </div>
       </div>

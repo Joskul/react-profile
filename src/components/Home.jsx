@@ -1,6 +1,7 @@
 import React from "react";
 import profilePic from "../assets/pic.png";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -17,12 +18,14 @@ const Home = () => {
           <p className="text-fg2 py-4 maxw">I make cool and fun stuff</p>
 
           <div>
-            <button className="group text-yellowDim font-bold w-fit px-6 py-3 my-2 flex items-center rounded-md bg-bg_h cursor-pointer">
-              Wanna check it out? 😏
-              <span className="group-hover:rotate-90 transition-all ml-1">
-                <FaArrowRight size="15" />
-              </span>
-            </button>
+            <Link to={"about"} smooth duration={500}>
+              <button className="group text-yellowDim font-bold w-fit px-6 py-3 my-2 flex items-center rounded-md bg-bg_h cursor-pointer">
+                Wanna check it out? 😏
+                <span className="group-hover:rotate-90 transition-all ml-1">
+                  <FaArrowRight size="15" />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
 
