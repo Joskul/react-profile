@@ -4,14 +4,17 @@ import { FaClipboard } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div name="contact" className="bg-bg_h w-full justify-center items-center">
+    <div
+      name="contact"
+      className="bg-bg_h w-full justify-center items-center pt-8"
+    >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="mb-8 border-b-2 border-b-fg3 flex justify-between">
           <p className="text-4xl font-bold">Contact Info</p>
           <p className="text-sm text-fg3">Let's get in touch!</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
           {contacts.map((item) => (
             <a
               href={item.href}

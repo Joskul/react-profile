@@ -23,7 +23,7 @@ const Repositories = () => {
   return (
     <div
       name="repos"
-      className="bg-bg_h w-full min-h-screen"
+      className="bg-bg_h w-full min-h-screen pt-8"
       onLoad={fetchData}
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
