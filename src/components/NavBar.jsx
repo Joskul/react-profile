@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import ReactTypingEffect from "react-typing-effect";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -44,7 +45,9 @@ const NavBar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-fg3 hover:text-fg transition-all"
           >
-            {link}
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>

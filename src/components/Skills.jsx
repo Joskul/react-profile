@@ -38,11 +38,11 @@ function Skills() {
   return (
     <div
       name="skills"
-      className="bg-bg_h mx-auto p-4 flex flex-col justrify-center w-full min-h-screen"
+      className="bg-bg_h mx-auto p-20 flex flex-col justrify-center w-full min-h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="mb-8 border-b-2 border-b-fg3 flex justify-between">
-          <p className="text-4xl font-bold">My Repositories</p>
+          <p className="text-4xl font-bold">Skills</p>
           <p className="text-sm text-fg3">Pretty much all I can do 😔</p>
         </div>
 
