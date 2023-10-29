@@ -16,20 +16,24 @@ const NavBar = () => {
     },
     {
       id: 3,
-      link: "Experience",
+      link: "repos",
     },
     {
       id: 4,
+      link: "skills",
+    },
+    {
+      id: 5,
       link: "contact",
     },
   ];
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-fg fixed bg-bg_s">
+    <div className="flex justify-between items-center w-full h-20 px-4 fixed bg-gradient-to-b from-bg_s to-bg-[transparent]">
       <div className="flex w-full">
         {/* <h1 className="text-5xl font-signature ml-2">Kurvidah</h1> */}
         <ReactTypingEffect
           text="Kurvidah"
-          className="text-5xl font-signature ml-2"
+          className="text-5xl font-signature ml-2 text-yellow"
           speed="100"
           cursor="_"
         />
