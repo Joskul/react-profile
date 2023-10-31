@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Repositories from "./components/Repositories";
 import SocialLinks from "./components/SocialLinks";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Repositories />
       <Skills />
+      <Education />
       <Contact />
     </div>
   );

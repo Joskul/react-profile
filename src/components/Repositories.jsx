@@ -31,7 +31,7 @@ const Repositories = () => {
           <p className="text-4xl font-bold">My Repositories</p>
           <p className="text-sm text-fg3">stuff I made mostly for fun 😉</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mx-auto">
           {githubRepos.map((repo) => (
             <div className="shadow-sm rounded-md bg-bg_h">
               <a href={repo.html_url} target="_blank" rel="noreferrer">
@@ -47,7 +47,7 @@ const Repositories = () => {
               <div className="flex items-center justify-between">
                 <p className="truncate ... text-sm">{repo.name}</p>
                 <a href={repo.html_url} target="_blank" rel="noreferrer">
-                  <button className="flex items-center bg-yellowDim mx-4 my-4 px-6 py-3 rounded-md hover:scale-105 hover:bg-yellow hover:text-bg3 transition-all">
+                  <button className="flex items-center bg-yellowDim mx-4 my-4 md:px-6 py-3 rounded-md hover:scale-105 hover:bg-yellow hover:text-bg3 transition-all">
                     Repo <FaGithub size={30} className="pl-2" />
                   </button>
                 </a>

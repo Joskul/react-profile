@@ -25,7 +25,7 @@ const NavBar = () => {
     },
     {
       id: 5,
-      link: "contact",
+      link: "education",
     },
   ];
   return (
@@ -66,7 +66,14 @@ const NavBar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl text-fg3 hover:text-5xl hover:text-fg transition-all"
             >
-              {link}
+              <Link
+                to={link}
+                smooth
+                duration={500}
+                onClick={() => setNav(!nav)}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
